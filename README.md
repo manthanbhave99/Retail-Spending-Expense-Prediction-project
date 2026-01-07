@@ -96,3 +96,15 @@ Customer risk profiling
 Credit and fraud risk pre-screening
 
 Portfolio-level customer segmentation
+
+# Future Enhancements
+
+MySQL stored procedures for KPIs
+
+Model persistence and versioning
+
+Explainability using feature importance
+
+Role-based dashboard views
+
+Time-series forecasting
