@@ -1,12 +1,12 @@
 # Retail-Spending-Expense-Prediction-project
 End-to-end Spend Analytics dashboard using Python, MySQL, Machine Learning, and Streamlit. The project analyzes transaction data, predicts spend using regression models, classifies risk with logistic and decision trees, and segments customers into actionable risk bands.
 
-Spend Analytics & Risk Prediction Dashboard
+# Spend Analytics & Risk Prediction Dashboard
 Project Overview
 
 This project is an end-to-end analytics and machine learning application built using Python, MySQL, Scikit-learn, and Streamlit. It analyzes transaction data to predict spending behavior, classify risk, and segment customers into actionable risk bands through an interactive dashboard.
 
-Key Features
+# Key Features
 
 Transaction-level spend analysis
 
@@ -22,7 +22,7 @@ Interactive Streamlit dashboard with button-driven predictions
 
 MySQL used as the backend data source
 
-Tech Stack
+# Tech Stack
 
 Programming Language: Python
 
@@ -34,7 +34,7 @@ Visualization & UI: Streamlit
 
 Data Handling: Pandas
 
-Dataset
+# Dataset
 
 The project uses a transactional CSV file containing fields such as:
 
@@ -52,7 +52,7 @@ opening_balance
 
 The data can be loaded directly from CSV or stored and queried from MySQL.
 
-Machine Learning Models
+# Machine Learning Models
 
 Linear Regression: Predicts estimated transaction amount
 
@@ -62,7 +62,7 @@ Decision Tree Regressor: Captures non-linear spend patterns
 
 Decision Tree Classifier: Rule-based risk classification
 
-Risk Segmentation Logic
+# Risk Segmentation Logic
 
 Customers are aggregated at profile level and classified into:
 
@@ -74,7 +74,7 @@ HIGH Risk
 
 Segmentation is based on quantile-based thresholds of total spending, ensuring scalability and explainability.
 
-How to Run the Project
+# How to Run the Project
 1. Install Dependencies
 pip install streamlit pandas scikit-learn mysql-connector-python
 
@@ -87,7 +87,7 @@ spending expenses.csv
 3. Run the Application
 streamlit run predictions.py
 
-Business Use Cases
+# Business Use Cases
 
 Spend behavior monitoring
 
