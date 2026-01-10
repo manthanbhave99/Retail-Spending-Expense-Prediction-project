@@ -1,0 +1,18 @@
+streamlit>=1.30.0
+pandas>=1.5.0
+scikit-learn>=1.2.0
+mysql-connector-python>=8.0.0
+numpy>=1.23.0
+matplotlib>=3.6.0
+
+Why These Libraries Are Included
+
+streamlit → Dashboard UI
+pandas → Data loading & aggregation
+scikit-learn → ML models (Linear, Logistic, Decision Tree)
+mysql-connector-python → MySQL backend connection
+numpy → Numerical operations (dependency for ML & pandas)
+matplotlib → Pie, box, heatmap charts
+
+How to Install
+pip install -r requirements.txt
