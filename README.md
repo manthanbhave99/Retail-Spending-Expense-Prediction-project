@@ -74,34 +74,11 @@ HIGH Risk
 
 Segmentation is based on quantile-based thresholds of total spending, ensuring scalability and explainability.
 
-# How to Run the Project
-1. Install Dependencies
-pip install streamlit pandas scikit-learn mysql-connector-python
-
-2. Ensure Files Are Present
-
-predictions.py
-
-spending expenses.csv
-
-3. Run the Application
-streamlit run predictions.py
-
-# Business Use Cases
-
-Spend behavior monitoring
-
-Customer risk profiling
-
-Credit and fraud risk pre-screening
-
-Portfolio-level customer segmentation
-
-🤖 AI Integration (Gemini Analytics Assistant)
+# 🤖 AI Integration (Gemini Analytics Assistant)
 
 This project integrates Google Gemini 2.5 Flash to provide context-aware, explainable insights on customer spending and risk.
 
-🔹 AI Model Used
+AI Model Used
 
 Model: models/gemini-2.5-flash
 
@@ -177,3 +154,28 @@ Dashboard-driven analysis
 Explainable risk decisions
 
 Production-aligned AI behavior
+
+
+# How to Run the Project
+1. Install Dependencies
+pip install streamlit pandas scikit-learn mysql-connector-python
+
+2. Ensure Files Are Present
+
+predictions.py
+
+spending expenses.csv
+
+3. Run the Application
+streamlit run predictions.py
+
+# Business Use Cases
+
+Spend behavior monitoring
+
+Customer risk profiling
+
+Credit and fraud risk pre-screening
+
+Portfolio-level customer segmentation
+
