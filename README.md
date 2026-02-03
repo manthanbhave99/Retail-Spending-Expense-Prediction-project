@@ -97,14 +97,83 @@ Credit and fraud risk pre-screening
 
 Portfolio-level customer segmentation
 
-# Future Enhancements
+🤖 AI Integration (Gemini Analytics Assistant)
 
-MySQL stored procedures for KPIs
+This project integrates Google Gemini 2.5 Flash to provide context-aware, explainable insights on customer spending and risk.
 
-Model persistence and versioning
+🔹 AI Model Used
 
-Explainability using feature importance
+Model: models/gemini-2.5-flash
 
-Role-based dashboard views
+Provider: Google Generative AI
 
-Time-series forecasting
+Purpose: Generate concise (3–4 lines) analytical explanations based on customer metrics
+
+# AI Design Approach
+
+The AI is not trained on historical data.
+Instead, it follows a runtime context injection (RAG-lite) approach:
+
+Customer metrics are computed using Pandas
+
+Selected customer data is injected into the prompt
+
+AI responses are strictly grounded in this data
+
+No dependency on chat history or previous prompts
+
+This ensures:
+
+Accurate explanations
+
+No hallucinations
+
+Deterministic, reproducible outputs
+
+# Prompt Context Structure
+
+Each AI request includes:
+
+Selected customer name
+
+Total spend
+
+Average spend
+
+Maximum transaction
+
+Risk thresholds and model context
+
+The AI is explicitly instructed to:
+
+Answer only for the selected customer
+
+Ignore any mismatched customer names in user input
+
+Limit responses to 3–4 concise lines
+
+# User Input Validation
+
+If the user types a different customer name than the selected one, a warning is shown
+
+The AI still responds using the selected customer as the source of truth
+
+Prevents incorrect or misleading explanations
+
+Example AI Use Case
+
+User Input:
+Why is this customer marked HIGH risk?
+
+AI Output:
+Explains the risk classification using actual spending metrics and thresholds without generic or conversational filler.
+
+# Benefits
+
+Business-safe AI responses
+
+Dashboard-driven analysis
+
+Explainable risk decisions
+
+Production-aligned AI behavior
